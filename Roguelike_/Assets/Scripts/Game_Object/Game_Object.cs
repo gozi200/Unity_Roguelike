@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game_Object : MonoBehaviour {
+public class Game_Objects : MonoBehaviour {
     [SerializeField]
-    List<Game_Object> objects;
+    List<Game_Objects> objects;
 
     // Use this for initialization
     void Start () {
