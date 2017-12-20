@@ -64,7 +64,7 @@ public class Dungeon_Generator : MonoBehaviour {
     /// チップ上のX座標を取得する.
     float Get_Chip_X(int i) {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-        var spr = Util.Get_Sprite("Chip1/Grass_Wall", "");
+        var spr = Util.Get_Sprite("Chip1/Grass_Wall_", "");
         var sprW = spr.bounds.size.x;
 
         return min.x + (sprW * i) + sprW / 2;
@@ -73,7 +73,7 @@ public class Dungeon_Generator : MonoBehaviour {
     /// チップ上のy座標を取得する.
     float Get_Chip_Y(int j) {
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        var spr = Util.Get_Sprite("Chip1/Grass_Wall", "");
+        var spr = Util.Get_Sprite("Chip1/Grass_Wall_", "");
         var sprH = spr.bounds.size.y;
 
         return max.y - (sprH * j) - sprH / 2;
@@ -122,7 +122,7 @@ public class Dungeon_Generator : MonoBehaviour {
                 if (layer.Get(i, j) == CHIP_WALL) {
                     x = Get_Chip_X(i);
                     y = Get_Chip_Y(j);
-                    Util.Create_Token(x, y, "Chip1/Grass_Wall", "", "Wall");
+                    Util.Create_Token(x, y, "Chip1/Grass_Wall_", "", "Wall");
                 }
             }
         }
@@ -392,7 +392,6 @@ public class Dungeon_Generator : MonoBehaviour {
             // 通路を作れた
             return true;
         }
-
 
         // つなげなかった
         return false;
