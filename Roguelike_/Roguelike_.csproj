@@ -223,13 +223,13 @@
     <Compile Include="Assets\Scripts\Create_Dungeon\Dungeon_Generator.cs" />
     <Compile Include="Assets\Scripts\Create_Dungeon\Layer2D.cs" />
     <Compile Include="Assets\Scripts\csv_Reader.cs" />
-    <Compile Include="Assets\Scripts\Game_Object\Actor\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Game_Object\Actor\Partner.cs" />
-    <Compile Include="Assets\Scripts\Game_Object\Actor\Player.cs" />
+    <Compile Include="Assets\Scripts\Game_Object\Actor\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Game_Object\Actor\Partner\Partner.cs" />
+    <Compile Include="Assets\Scripts\Game_Object\Actor\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Game_Object\Actor\Player\Player_Data.cs" />
     <Compile Include="Assets\Scripts\Game_Object\Dungeon\Grass\Grass_Tile.cs" />
     <Compile Include="Assets\Scripts\Game_Object\Dungeon\Grass\Grass_Wall.cs" />
-    <Compile Include="Assets\Scripts\Game_Object\Game_Object.cs" />
-    <Compile Include="Assets\Scripts\Game_Objects.cs" />
+    <Compile Include="Assets\Scripts\Game_Object\Game_Objects.cs" />
     <Compile Include="Assets\Scripts\Token.cs" />
     <Compile Include="Assets\Scripts\Util.cs" />
   </ItemGroup>
